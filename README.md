@@ -13,11 +13,9 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `User Stories`
 
-CHECK
+
 As visitor I would like have a searchbar were I can find specific activities which saves my time than scrolling down.
 
-CHECK
 As visitor I would have comments section where we can add comment were I can ask people about the event.
 
-CHECK
 As visitor I want filter automatic for date were I can look events that soon begin and available first.
