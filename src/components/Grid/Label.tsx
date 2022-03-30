@@ -4,6 +4,8 @@ import {  useState } from "react";
 import CommentList from '../Comment/CommentList';
 import CommentAdd from '../Comment/CommentAdd';
 
+import SignButton from '../Button/SignButton';
+
 interface Props {
   event: Event;
 }
@@ -29,11 +31,14 @@ const Label = ({ event }: Props) => {
       <h2>{event.title}</h2>
       <h4>{event.address}</h4>
       <p className="date-box">{event.date}</p>
+      
+      <SignButton />
 
       {/* Render comments */}
       
       <CommentAdd people={people} setPeople={setPeople}/>
       <CommentList people={people} />
+      
       
 
     </section>

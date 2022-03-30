@@ -107,6 +107,16 @@ textarea {
   cursor: pointer;
 }
 
+.signUp-button{
+  width: 50%;
+  border:  solid black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+}
+
 .comment-person{
   background-color: #ccc;
   border: 3px solid black;

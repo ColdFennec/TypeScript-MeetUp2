@@ -8,7 +8,7 @@ const commentList: React.FC<IProps> = ({ people }) => {
   const renderComment = (): JSX.Element[] => {
     return people.map((person) => {
       return (
-        <li className="comment-person">
+        <li key={Math.random()} className="comment-person">
           <h4 className="comment-name">
             {person.name}
           </h4>
