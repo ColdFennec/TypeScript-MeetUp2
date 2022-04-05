@@ -1,6 +1,6 @@
 import SignButton from "./SignButton";
-import { render, screen} from "@testing-library/react";
-import { configure } from "enzyme";
+import { render } from "@testing-library/react";
+import { configure, shallow} from "enzyme";
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 
@@ -12,11 +12,12 @@ describe("Button test run", () => {
         render(<SignButton />);
     });
 
-    it("When onclick, the button text changes", () => {
-        render(<SignButton />);
+    it("Render with button text", () => {
+        
+        const wrapper = shallow(<SignButton />);
 
-        expect(screen.getByText("You signed up event")).toBeInTheDocument();
-    })
+        const button = wrapper.find(".sign-button");
 
-
+        expect(button.text()).toBe("Sign up Event")
+    });
 })
